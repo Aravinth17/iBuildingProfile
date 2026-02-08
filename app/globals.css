@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --surface-soft: #edf2ff;
+  --ink: #1a2442;
+  --muted: #536384;
+  --brand: #1f7fd2;
+  --brand-deep: #253d90;
+  --ring: #d5dff1;
+  --ring-dark: #b7c6e4;
+
+  --building: #2a67d1;
+  --building-deep: #204ea8;
+  --building-soft: #e9f0ff;
+  --building-ring: #bfd1f8;
+  --building-shell: #f5f9ff;
+  --building-surface: #f8fbff;
+
+  --energy: #178f4a;
+  --energy-deep: #0f6d37;
+  --energy-soft: #d3f0de;
+  --energy-ring: #6fcb95;
+  --energy-shell: #e5f8ec;
+  --energy-surface: #effbf3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body), "Segoe UI", sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-heading), "Avenir Next", sans-serif;
+}
+
+.section-kicker {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: var(--brand-deep);
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: rise 0.55s ease forwards;
+}
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
