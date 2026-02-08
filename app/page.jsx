@@ -19,8 +19,8 @@ const capabilities = [
     title: "Smart Grid Infrastructure",
     description:
       "Advanced metering and energy monitoring systems for enterprise and infrastructure sites.",
-    image: "/capabilities/smart-grid.jpg",
-    alt: "Smart electricity meter infrastructure",
+    image: "/capabilities/smart-meter-closeup.jpg",
+    alt: "Smart electricity meter close-up",
   },
 ];
 
